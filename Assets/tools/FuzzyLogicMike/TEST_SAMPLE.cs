@@ -229,6 +229,7 @@ public class TEST_SAMPLE : MonoBehaviour {
 	void Update()
 	{
 		print ("test");
-		MakeDisicion (GetComponent<actorTest>().KillOdds(), GetComponent<DataBind> ().selfLife);
+        print("Mike test");
+        MakeDisicion(GetComponent<actorTest>().KillOdds(), GetComponent<DataBind> ().selfLife);
 	}
 }
