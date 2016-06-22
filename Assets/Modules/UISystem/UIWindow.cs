@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class HUDskill : MonoBehaviour {
-
+public class UIWindow : MonoBehaviour {
+	int windowID;
 	// Use this for initialization
 	void Start () {
 	
@@ -11,5 +11,13 @@ public class HUDskill : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+	}
+	void Hide()
+	{
+		gameObject.SetActive (false);
+	}
+	void Show()
+	{
+		gameObject.SetActive (true);
 	}
 }

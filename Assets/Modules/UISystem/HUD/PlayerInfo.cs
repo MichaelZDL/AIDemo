@@ -32,6 +32,7 @@ public class PlayerInfo : MonoBehaviour {
 	}
 	public void BindPlayer(GameObject value)
 	{
+		print ("1");
 		player = value;
 		name = player.name;
 		nameText.text = "PlayerName:"+value;

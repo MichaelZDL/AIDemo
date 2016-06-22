@@ -5,7 +5,7 @@ public class gray : MonoBehaviour {
 	// Use this for initialization
 	public Material mat;
 	public Material mat2;
-	public Texture tex;
+	public RenderTexture tex;
 	void Start () {
 	
 	}
@@ -16,7 +16,8 @@ public class gray : MonoBehaviour {
 	}
 	void OnRenderImage(RenderTexture src,RenderTexture des)
 	{
-		RenderTexture t = RenderTexture.GetTemporary (Screen.width,Screen.height, 24, RenderTextureFormat.ARGB32);
+		RenderTexture t=RenderTexture.GetTemporary (Screen.width,Screen.width, 24, RenderTextureFormat.ARGB32);
+		tex = t;
 		Graphics.Blit (t, des,mat);
 		RenderTexture rt = RenderTexture.GetTemporary (Screen.width,Screen.height, 24, RenderTextureFormat.ARGB32);
 		Graphics.Blit (rt, des,mat2);

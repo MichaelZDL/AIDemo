@@ -5,10 +5,11 @@ public class actorTest : MonoBehaviour {
 	public MoveActorComponent actorComponent;
 	public AttackActorComponent attackController;
 	public GameObject testTarget;
+	public string panelName;
 	float t;
 	// Use this for initialization
 	void Start () {
-
+		transform.Find ("/Canvas/HUD/" + panelName).GetComponent<PlayerInfo> ().BindPlayer (gameObject);
 	}
 	public void TestAttack()
 	{
