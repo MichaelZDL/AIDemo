@@ -5,9 +5,10 @@ public class gray : MonoBehaviour {
 	// Use this for initialization
 	public Material mat;
 	public Material mat2;
-	public RenderTexture tex;
+	RenderTexture rt;
+
 	void Start () {
-	
+		rt =new RenderTexture(Screen.width,Screen.height,24,RenderTextureFormat.ARGB32);
 	}
 	
 	// Update is called once per frame
@@ -17,11 +18,24 @@ public class gray : MonoBehaviour {
 	void OnRenderImage(RenderTexture src,RenderTexture des)
 	{
 		RenderTexture t=RenderTexture.GetTemporary (Screen.width,Screen.width, 24, RenderTextureFormat.ARGB32);
-		tex = t;
-		Graphics.Blit (t, des,mat);
-		RenderTexture rt = RenderTexture.GetTemporary (Screen.width,Screen.height, 24, RenderTextureFormat.ARGB32);
-		Graphics.Blit (rt, des,mat2);
+		RenderTexture rt2=RenderTexture.GetTemporary (Screen.width,Screen.width, 24, RenderTextureFormat.ARGB32);;
+		rt2.filterMode = FilterMode.Bilinear;
+		rt.filterMode = FilterMode.Bilinear;
+		Graphics.Blit (t, rt2, mat);
+		Graphics.Blit (rt2, rt,mat2,0);
+		Graphics.Blit (rt, rt2,mat2,0);
+		Graphics.Blit (rt2, rt,mat2,0);
+		Graphics.Blit (rt, rt2,mat2,0);
+		Graphics.Blit (rt2, rt,mat2,0);
+		Graphics.Blit (rt, rt2,mat2,0);
+		Graphics.Blit (rt2, rt,mat2,0);
+
+		mat2.SetTexture ("_BlurTex", rt);
+		Graphics.Blit (src, rt2, mat);
+		Graphics.Blit (rt2, rt2, mat);
+		//Graphics.Blit (src, des, mat2, 1);
+		Graphics.Blit(rt2,des,mat2,1);
 		RenderTexture.ReleaseTemporary (t);
-		RenderTexture.ReleaseTemporary (rt);
+		RenderTexture.ReleaseTemporary (rt2);
 	}
 }

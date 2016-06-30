@@ -1,0 +1,1 @@
+{"list":[{"color":{"r":1.0,"g":0.0,"b":0.0,"a":1.0},"life":100.0,"range":9.0,"speed":4.0,"damage":10.0,"controlMode":0},{"color":{"r":0.0,"g":0.0,"b":0.0,"a":0.0},"life":9999.0,"range":9.0,"speed":4.0,"damage":25.0,"controlMode":2}]}

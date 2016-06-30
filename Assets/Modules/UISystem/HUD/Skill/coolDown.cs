@@ -2,17 +2,21 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class coolDown : MonoBehaviour {
+public class CoolDown : MonoBehaviour {
 	float cooldownTime;
 	float t;
 	Material mat;
 	// Use this for initialization
-	void Start () {
-		mat = GetComponent<Image> ().material;
+	void Awake () {
+		mat = Instantiate (GetComponent<RawImage> ().material);
+		GetComponent<RawImage> ().material = mat;
 	}
 	public void SetCoolDownTime(float value)
 	{
 		cooldownTime = value;
+		t = value;
+		//print (gameObject.name);
+		mat.SetFloat ("_amount", 1 - t / cooldownTime);
 	}
 	public void BeginCoolDown()
 	{

@@ -2,21 +2,21 @@
 using System.Collections;
 
 public class UIWindow : MonoBehaviour {
-	int windowID;
+	public int windowID;
 	// Use this for initialization
 	void Start () {
-	
+		
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
 	}
-	void Hide()
+	public virtual void Hide()
 	{
 		gameObject.SetActive (false);
 	}
-	void Show()
+	public  virtual void Show()
 	{
 		gameObject.SetActive (true);
 	}

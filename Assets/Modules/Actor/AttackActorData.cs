@@ -3,7 +3,7 @@ using System.Collections;
 
 public class AttackActorData{
 	float damage;
-	float attackRate=1;
+	float attackRate=1.5f;
 	float attackRange;
 	public float Damage
 	{

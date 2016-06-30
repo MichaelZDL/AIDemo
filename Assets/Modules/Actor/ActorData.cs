@@ -11,6 +11,11 @@ public class ActorData{
 	float moveSpeedReal;//真实速度
 	float defense=0;
 	float cutDamage=0;
+	public void BindPlayer(GameObject player)
+	{
+		player.GetComponent<HitComponent> ().HitEvent += CutLife;
+		player.GetComponent<HitComponent> ().HealEvent += GainLife;
+	}
 	public Vector3 WorldPosition
 	{
 		//这个咋同步？
@@ -90,7 +95,7 @@ public class ActorData{
 	}
 	public void AddDefense(float value)
 	{
-		defense = value;
+		defense += value;
 		//减伤率
 		cutDamage = defense / (100 + defense);
 	}
@@ -101,6 +106,10 @@ public class ActorData{
 	public void GainLife(float value)
 	{
 		life = Mathf.Min (maxLife, life + value);
+	}
+	public void SetLife(float value)
+	{
+		life = value;
 	}
 	public void SetMax(float value)
 	{

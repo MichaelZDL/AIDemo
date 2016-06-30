@@ -1,0 +1,819 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &114198
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 403178}
+  - 33: {fileID: 3382558}
+  - 136: {fileID: 13696206}
+  - 23: {fileID: 2328622}
+  m_Layer: 0
+  m_Name: Indicator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &131256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 482154}
+  - 114: {fileID: 11491600}
+  - 114: {fileID: 11417790}
+  - 114: {fileID: 11436218}
+  - 114: {fileID: 11495784}
+  - 195: {fileID: 19509032}
+  - 114: {fileID: 11421274}
+  - 114: {fileID: 11437878}
+  - 114: {fileID: 11435508}
+  - 114: {fileID: 11439598}
+  - 114: {fileID: 11411798}
+  - 114: {fileID: 11457488}
+  - 114: {fileID: 11484698}
+  - 114: {fileID: 11453880}
+  - 65: {fileID: 6506352}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &164738
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 464788}
+  - 33: {fileID: 3380138}
+  - 65: {fileID: 6572020}
+  - 23: {fileID: 2353934}
+  - 114: {fileID: 11462364}
+  - 114: {fileID: 11443104}
+  m_Layer: 0
+  m_Name: PlayerGun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &177810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 489310}
+  - 33: {fileID: 3393356}
+  - 65: {fileID: 6551118}
+  - 23: {fileID: 2399026}
+  m_Layer: 0
+  m_Name: PlayerBlue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &403178
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 114198}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 6, y: 0.001, z: 6}
+  m_Children: []
+  m_Father: {fileID: 482154}
+  m_RootOrder: 1
+--- !u!4 &464788
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164738}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.013000059, y: 0, z: -0.59400016}
+  m_LocalScale: {x: 0.49251744, y: 1, z: 0.76563376}
+  m_Children: []
+  m_Father: {fileID: 489310}
+  m_RootOrder: 0
+--- !u!4 &482154
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131256}
+  m_LocalRotation: {x: 0, y: 0.99999, z: 0, w: -0.004483586}
+  m_LocalPosition: {x: -0.27, y: 0.156, z: 17.07}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 489310}
+  - {fileID: 403178}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &489310
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177810}
+  m_LocalRotation: {x: 0, y: 0.9990395, z: 0, w: -0.04382031}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.6787522, y: 0.3464675, z: 0.4184518}
+  m_Children:
+  - {fileID: 464788}
+  m_Father: {fileID: 482154}
+  m_RootOrder: 0
+--- !u!23 &2328622
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 114198}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: af73ce04c414c444a83ae56a09f9ada2, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!23 &2353934
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164738}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 1e9c82bc75f5f51428ae88640c1dafb5, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!23 &2399026
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177810}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 1e9c82bc75f5f51428ae88640c1dafb5, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &3380138
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164738}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &3382558
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 114198}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &3393356
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177810}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &6506352
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131256}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &6551118
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 177810}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &6572020
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164738}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &11411798
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d01325c62ac3e854c9a20c8c533e98db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behaviorTree: {fileID: 11484698}
+  Home: {fileID: 0}
+  selfLife: 0
+  homeDistance: 0
+--- !u!114 &11417790
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c1a813b991b7a49b5254091e244893, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Range: 1.5
+  damage: 9
+  test: 0
+--- !u!114 &11421274
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45d3eebf890453f49804c8de56920a86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxLife: 100
+  test: 0
+--- !u!114 &11435508
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bce3c4ef5f51f434695b03e0d65dd9b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actorComponent: {fileID: 11421274}
+  attackController: {fileID: 11417790}
+  enemyAttack: {fileID: 0}
+  testTarget: {fileID: 0}
+  panelName: BluePlayerInfo
+--- !u!114 &11436218
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b9f42cae47eca94bb950b29e0dd90a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 489310}
+--- !u!114 &11437878
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6cfbc1aa11be344bb64b93510dfbc8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11439598
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf5859994e3b0044c986d0bed5ca7e57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  indicator: {fileID: 114198}
+--- !u!114 &11443104
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e81bfb2d59855348866b7c0fb983314, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objpool: []
+  size: 15
+  poolObj: {fileID: 151646, guid: 029620de6a900234a8ac3e2efe8ba083, type: 2}
+  itemDestroyByTime: 0
+--- !u!114 &11453880
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caa7a84c34b147346ae1e8b3c306fdd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healCoolDown: 0
+  shieldCooldown: 0
+  healCoolDownTime: 10
+  shieldCoolDownTime: 10
+--- !u!114 &11457488
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3f457bc34c05bc479d2a5244b55fe79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11462364
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fb2306048f840c44ab59706b7bd3846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoPack: {fileID: 11443104}
+--- !u!114 &11484698
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131256}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startWhenEnabled: 0
+  pauseWhenDisabled: 1
+  restartWhenComplete: 1
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 0}
+  mBehaviorSource:
+    behaviorName: Player
+    behaviorDescription: 
+    mTaskData:
+      types:
+      - BehaviorDesigner.Runtime.Tasks.EntryTask
+      - BehaviorDesigner.Runtime.Tasks.Selector
+      - BehaviorDesigner.Runtime.Tasks.Sequence
+      - BehaviorDesigner.Runtime.Tasks.Basic.Math.FloatComparison
+      - BehaviorDesigner.Runtime.Tasks.Attack
+      - BehaviorDesigner.Runtime.Tasks.Sequence
+      - BehaviorDesigner.Runtime.Tasks.Basic.Math.FloatComparison
+      - BehaviorDesigner.Runtime.Tasks.Selector
+      - BehaviorDesigner.Runtime.Tasks.Sequence
+      - BehaviorDesigner.Runtime.Tasks.Basic.Math.IntComparison
+      - BehaviorDesigner.Runtime.Tasks.Attack
+      - BehaviorDesigner.Runtime.Tasks.Sequence
+      - BehaviorDesigner.Runtime.Tasks.Basic.Math.IntComparison
+      - BehaviorDesigner.Runtime.Tasks.Attack
+      - BehaviorDesigner.Runtime.Tasks.Flee
+      - BehaviorDesigner.Runtime.Tasks.Sequence
+      - BehaviorDesigner.Runtime.Tasks.Selector
+      - BehaviorDesigner.Runtime.Tasks.Sequence
+      - BehaviorDesigner.Runtime.Tasks.Basic.Math.IntComparison
+      - BehaviorDesigner.Runtime.Tasks.Attack
+      - BehaviorDesigner.Runtime.Tasks.Flee
+      parentIndex: ffffffff00000000010000000200000002000000010000000500000005000000070000000800000008000000070000000b0000000b00000007000000010000000f00000010000000110000001100000010000000
+      startIndex: 08000000120000001d000000280000003c000000460000005100000065000000700000007b0000008f00000099000000a4000000b8000000c2000000cc000000d7000000e2000000ed000000010100000b010000
+      variableStartIndex: 0000000004000000
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName:
+        - StringType
+        - StringName
+        - BooleanIsShared
+        - SinglemValue
+        - StringType
+        - StringName
+        - BooleanIsShared
+        - Int32mValue
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - AbortTypeabortType
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - AbortTypeabortType
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - Operationoperation
+        - SharedFloatfloat1
+        - StringSharedFloatfloat1Type
+        - StringSharedFloatfloat1Name
+        - BooleanSharedFloatfloat1IsShared
+        - SingleSharedFloatfloat1mValue
+        - SharedFloatfloat2
+        - StringSharedFloatfloat2Type
+        - StringSharedFloatfloat2Name
+        - SingleSharedFloatfloat2mValue
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - AbortTypeabortType
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - Operationoperation
+        - SharedFloatfloat1
+        - StringSharedFloatfloat1Type
+        - StringSharedFloatfloat1Name
+        - BooleanSharedFloatfloat1IsShared
+        - SingleSharedFloatfloat1mValue
+        - SharedFloatfloat2
+        - StringSharedFloatfloat2Type
+        - StringSharedFloatfloat2Name
+        - SingleSharedFloatfloat2mValue
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - AbortTypeabortType
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - AbortTypeabortType
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - Operationoperation
+        - SharedIntinteger1
+        - StringSharedIntinteger1Type
+        - StringSharedIntinteger1Name
+        - BooleanSharedIntinteger1IsShared
+        - Int32SharedIntinteger1mValue
+        - SharedIntinteger2
+        - StringSharedIntinteger2Type
+        - StringSharedIntinteger2Name
+        - Int32SharedIntinteger2mValue
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - AbortTypeabortType
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - Operationoperation
+        - SharedIntinteger1
+        - StringSharedIntinteger1Type
+        - StringSharedIntinteger1Name
+        - BooleanSharedIntinteger1IsShared
+        - Int32SharedIntinteger1mValue
+        - SharedIntinteger2
+        - StringSharedIntinteger2Type
+        - StringSharedIntinteger2Name
+        - Int32SharedIntinteger2mValue
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - AbortTypeabortType
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - AbortTypeabortType
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - AbortTypeabortType
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - Operationoperation
+        - SharedIntinteger1
+        - StringSharedIntinteger1Type
+        - StringSharedIntinteger1Name
+        - BooleanSharedIntinteger1IsShared
+        - Int32SharedIntinteger1mValue
+        - SharedIntinteger2
+        - StringSharedIntinteger2Type
+        - StringSharedIntinteger2Name
+        - Int32SharedIntinteger2mValue
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        - Int32ID
+        - StringFriendlyName
+        - BooleanIsInstant
+        - Vector2NodeDataOffset
+        - StringNodeDataComment
+        - BooleanNodeDataIsBreakpoint
+        - BooleanNodeDataDisabled
+        - BooleanNodeDataCollapsed
+        - Int32NodeDataColorIndex
+        - List`1NodeDataWatchedFields
+        startIndex: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f0000003000000031000000320000003300000033000000340000003500000036000000370000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005a0000005b0000005c0000005d0000005e0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f000000700000007100000072000000730000007400000075000000760000007700000078000000790000007a0000007b0000007c0000007d0000007e0000007f0000008000000081000000820000008200000083000000840000008500000086000000860000008700000088000000890000008a0000008b0000008c0000008d0000008e0000008f000000900000009100000092000000930000009400000095000000960000009700000098000000990000009a0000009b0000009c0000009d0000009e0000009f000000a0000000a1000000a2000000a3000000a4000000a5000000a6000000a7000000a8000000a9000000a9000000aa000000ab000000ac000000ad000000ad000000ae000000af000000b0000000b1000000b2000000b3000000b4000000b5000000b6000000b7000000b8000000b9000000ba000000bb000000bc000000bd000000be000000bf000000c0000000c1000000c2000000c3000000c4000000c5000000c6000000c7000000c8000000c9000000ca000000cb000000cc000000cd000000ce000000cf000000d0000000d1000000d2000000d3000000d4000000d5000000d6000000d7000000d8000000d9000000da000000db000000dc000000dd000000de000000df000000e0000000e1000000e2000000e3000000e4000000e5000000e6000000e7000000e8000000e9000000ea000000eb000000ec000000ed000000ee000000ef000000f0000000f0000000f1000000f2000000f3000000f4000000f4000000f5000000f6000000f7000000f8000000f9000000fa000000fb000000fc000000fd000000fe000000ff000000000100000101000002010000030100000401000005010000060100000701000008010000090100000a010000
+        dataPosition: 00000000240000002c0000002d00000031000000530000005b0000005c0000006000000064000000690000006a0000007200000072000000730000007400000075000000790000007d00000081000000890000008a0000009200000092000000930000009400000095000000990000009d000000a1000000a5000000ad000000ae000000b6000000b6000000b7000000b8000000b9000000bd000000c1000000c5000000c9000000d9000000da000000e2000000e2000000e3000000e4000000e5000000e9000000ed000000f1000000150100001d0100001e0100002201000046010000460100004a0100004e01000054010000550100005d0100005d0100005e0100005f0100006001000064010000680100006c01000074010000750100007d0100007d0100007e0100007f0100008001000084010000880100008c01000090010000a0010000a1010000a9010000a9010000aa010000ab010000ac010000b0010000b4010000b8010000dc010000e4010000e5010000e90100000d0200000d02000011020000150200001d0200001e02000026020000260200002702000028020000290200002d02000031020000350200003902000041020000420200004a0200004a0200004b0200004c0200004d0200005102000055020000590200005d0200006b0200006c02000074020000740200007502000076020000770200007b0200007f02000083020000a5020000ad020000ae020000b2020000d4020000d4020000d8020000dc020000e2020000e3020000eb020000eb020000ec020000ed020000ee020000f2020000f6020000fa02000002030000030300000b0300000b0300000c0300000d0300000e03000012030000160300001a0300001e0300002c0300002d03000035030000350300003603000037030000380300003c0300004003000044030000660300006e0300006f030000730300009503000095030000990300009d030000a3030000a4030000ac030000ac030000ad030000ae030000af030000b3030000b7030000bb030000bf030000c0030000c8030000c8030000c9030000ca030000cb030000cf030000d3030000d7030000df030000e0030000e8030000e8030000e9030000ea030000eb030000ef030000f3030000f7030000fb03000003040000040400000c0400000c0400000d0400000e0400000f04000013040000170400001b0400001f04000027040000280400003004000030040000310400003204000033040000370400003b0400003f0400004304000051040000520400005a0400005a0400005b0400005c0400005d0400006104000065040000690400008b040000930400009404000098040000ba040000ba040000be040000c2040000c8040000c9040000d1040000d1040000d2040000d3040000d4040000d8040000dc040000e0040000e4040000e5040000ed040000ed040000ee040000ef040000f0040000f4040000
+        unityObjects: []
+        byteData: 4265686176696f7244657369676e65722e52756e74696d652e536861726564466c6f617473656c664c69666501000000004265686176696f7244657369676e65722e52756e74696d652e536861726564496e746b696c6c4f646473010000000000000000456e74727901000000000000000000000000000000000000000000000153656c6563746f720180ed2e40245b04430000000000000000000000000000000000000253657175656e636501000082c300003e4300000000000000000000000000000000000003466c6f617420436f6d70617269736f6e010000dcc2000016430000000000000000000000000000054265686176696f7244657369676e65722e52756e74696d652e536861726564466c6f617473656c664c69666501000000004265686176696f7244657369676e65722e52756e74696d652e536861726564466c6f6174424800000000000441747461636b01000048420000164300000000000000000000000000000553657175656e636501d5b64d420000484300000000000000000000000000000000000006466c6f617420436f6d70617269736f6e010000f0c1000002430000000000000000000000000000054265686176696f7244657369676e65722e52756e74696d652e536861726564466c6f617473656c664c69666501000000004265686176696f7244657369676e65722e52756e74696d652e536861726564466c6f617441a000000000000753656c6563746f72014c920a43284906430000000000000000000000000000000000000853657175656e6365019be7ecc39ae75d4300000000000000000000000000000000000009496e7420436f6d70617269736f6e010000f0c20000f0420000000000000000000000000000014265686176696f7244657369676e65722e52756e74696d652e536861726564496e746b696c6c4f64647301000000004265686176696f7244657369676e65722e52756e74696d652e536861726564496e74000000070000000a41747461636b010000f0410000f04200000000000000000000000000000b53657175656e636501652c02c3199b66430000000000000000000000000000000000000c496e7420436f6d70617269736f6e010000f0c20000f0420000000000000000000000000000014265686176696f7244657369676e65722e52756e74696d652e536861726564496e746b696c6c4f64647301000000004265686176696f7244657369676e65722e52756e74696d652e536861726564496e74000000010000000d41747461636b01b06dfb41e8ffef4200000000000000000000000000000e466c656501f8486a42ecff334300000000000000000000000000000f53657175656e6365018e240e44bc6d03430000000000000000000000000000000000001053656c6563746f7201e0ff9f41dcb607430000000000000000000000000000000000001153657175656e636501619280c2e0b6e14200000000000000000000000000000000000012496e7420436f6d70617269736f6e010400f0c20000f0420000000000000000000000000000014265686176696f7244657369676e65722e52756e74696d652e536861726564496e746b696c6c4f64647301000000004265686176696f7244657369676e65722e52756e74696d652e536861726564496e74000000010000001341747461636b010000f0410000f042000000000000000000000000000014466c656501a86d7143dcb66b430000000000000000000000
+        byteDataArray: 4265686176696f7244657369676e65722e52756e74696d652e536861726564466c6f617473656c664c69666501000000004265686176696f7244657369676e65722e52756e74696d652e536861726564496e746b696c6c4f646473010000000000000000456e74727901000000000000000000000000000000000000000100000053656c6563746f720180ed2e40245b04430000000000000000000000000000000200000053657175656e636501000082c300003e4300000000000000000000000000000003000000466c6f617420436f6d70617269736f6e010000dcc2000016430000000000000000000000050000004265686176696f7244657369676e65722e52756e74696d652e536861726564466c6f617473656c664c69666501000000004265686176696f7244657369676e65722e52756e74696d652e536861726564466c6f6174000048420400000041747461636b01000048420000164300000000000000000000000500000053657175656e636501d5b64d420000484300000000000000000000000000000006000000466c6f617420436f6d70617269736f6e010000f0c1000002430000000000000000000000050000004265686176696f7244657369676e65722e52756e74696d652e536861726564466c6f617473656c664c69666501000000004265686176696f7244657369676e65722e52756e74696d652e536861726564466c6f61740000a0410700000053656c6563746f72014c920a43284906430000000000000000000000000000000800000053657175656e6365019be7ecc39ae75d4300000000000000000000000000000009000000496e7420436f6d70617269736f6e010000f0c20000f0420000000000000000000000010000004265686176696f7244657369676e65722e52756e74696d652e536861726564496e746b696c6c4f64647301000000004265686176696f7244657369676e65722e52756e74696d652e536861726564496e74070000000a00000041747461636b010000f0410000f04200000000000000000000000b00000053657175656e636501652c02c3199b66430000000000000000000000000000000c000000496e7420436f6d70617269736f6e010000f0c20000f0420000000000000000000000010000004265686176696f7244657369676e65722e52756e74696d652e536861726564496e746b696c6c4f64647301000000004265686176696f7244657369676e65722e52756e74696d652e536861726564496e74010000000d00000041747461636b01b06dfb41e8ffef4200000000000000000000000e000000466c656501f8486a42ecff334300000000000000000000000f00000053657175656e6365018e240e44bc6d03430000000000000000000000000000001000000053656c6563746f7201e0ff9f41dcb607430000000000000000000000000000001100000053657175656e636501619280c2e0b6e14200000000000000000000000000000012000000496e7420436f6d70617269736f6e010400f0c20000f0420000000000000000000000010000004265686176696f7244657369676e65722e52756e74696d652e536861726564496e746b696c6c4f64647301000000004265686176696f7244657369676e65722e52756e74696d652e536861726564496e74010000001300000041747461636b010000f0410000f042000000000000000000000014000000466c656501a86d7143dcb66b430000000000000000000000
+--- !u!114 &11491600
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32f3c3f56e9d7547af22ed53e459f83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Weapon: {fileID: 164738}
+  aimObj: {fileID: 131256}
+--- !u!114 &11495784
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d78ac7aa4f125fc4d8480420a0cf760b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!136 &13696206
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 114198}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!195 &19509032
+NavMeshAgent:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131256}
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Speed: 2
+  m_Acceleration: 10000
+  avoidancePriority: 50
+  m_AngularSpeed: 10000
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 131256}
+  m_IsPrefabParent: 1

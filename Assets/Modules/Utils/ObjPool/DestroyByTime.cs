@@ -20,6 +20,6 @@ public class DestroyByTime : MonoBehaviour {
 	void Update () {
 		t += Time.deltaTime;
 		if (t >= destroyTime)
-			GetComponent<poolItem> ().objPool.GetComponent<ObjPool> ().PushGameObject (gameObject);
+			Destroy (gameObject);
 	}
 }

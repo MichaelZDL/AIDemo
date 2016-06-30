@@ -21,6 +21,11 @@ public class ObjPool : MonoBehaviour {
 		rt.transform.SetParent (null);
 		return rt;
 	}
+	public void NewAmmo()
+	{
+		if(Objpool.Count<8)
+		PushGameObject ((GameObject)Instantiate (poolObj, Vector3.zero, Quaternion.Euler(0,0,0)));
+	}
 	public void PushGameObject(GameObject obj)
 	{
 		if (obj.GetComponent<poolItem> () == null)

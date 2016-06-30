@@ -7,13 +7,14 @@ public class HitView : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		oriSize = target.transform.localScale;
+		//gameObject.GetComponent<HitComponent> ().HitEvent += Hit;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 	
 	}
-	public void Hit()
+	public void Hit(float value)
 	{
 		if (oriSize==target.transform.localScale) {
 			target.transform.localScale = oriSize*0.9f;

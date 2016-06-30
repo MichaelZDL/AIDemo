@@ -9,6 +9,10 @@ public class HomeComponent : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
+	public void SetPlayer(Transform value)
+	{
+		player = value;
+	}
 	void Update () {
 		if (Vector3.Distance (player.transform.position, transform.position) < 1.5)
 			player.GetComponent<HitComponent> ().Heal (20);

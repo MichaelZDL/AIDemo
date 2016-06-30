@@ -11,7 +11,7 @@ public class DataBind : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		actorData = GetComponent<MoveActorComponent> ().ActorData;
-		enemyActorData = GetComponent<actorTest> ().testTarget.GetComponent<MoveActorComponent>().ActorData;
+		//enemyActorData = GetComponent<actorTest> ().testTarget.GetComponent<MoveActorComponent>().ActorData;
 		behaviorTree = GetComponent<BehaviorDesigner.Runtime.BehaviorTree> ();
 	}
 	
@@ -20,6 +20,6 @@ public class DataBind : MonoBehaviour {
 		selfLife = actorData.Life;
 		homeDistance = Vector3.Distance (Home.position, transform.position);
 		behaviorTree.SetVariableValue ("selfLife", selfLife);
-		behaviorTree.SetVariableValue ("killOdds", GetComponent<actorTest>().KillOdds());
+		//behaviorTree.SetVariableValue ("killOdds", GetComponent<actorTest>().KillOdds());
 	}
 }
