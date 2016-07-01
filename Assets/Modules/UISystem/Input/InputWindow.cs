@@ -32,11 +32,11 @@ public class InputWindow : UIWindow {
 				string json=JsonUtility.ToJson(infoList);
 				using(StreamWriter sw = new StreamWriter("data.txt"))
 				{
-				sw.Write(json);
-				PlayerInfoList pList=JsonUtility.FromJson<PlayerInfoList>(json);
-				InitData.Instance.playerData=pList.list;
-				GameEntry.Instance.GameStart();
-				Hide();
+				    sw.Write(json);
+				    PlayerInfoList pList=JsonUtility.FromJson<PlayerInfoList>(json);
+				    InitData.Instance.playerData=pList.list;
+				    GameEntry.Instance.GameStart();
+				    Hide();
 				}
 			}
 		);

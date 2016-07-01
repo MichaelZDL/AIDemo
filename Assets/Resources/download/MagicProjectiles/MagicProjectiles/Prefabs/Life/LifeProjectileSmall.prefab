@@ -231,8 +231,8 @@ Light:
   serializedVersion: 6
   m_Type: 2
   m_Color: {r: 0.24137926, g: 1, b: 0, a: 1}
-  m_Intensity: 8
-  m_Range: 4
+  m_Intensity: 1
+  m_Range: 2
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -1908,7 +1908,7 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 2474770341
+        rgba: 2471071838
       minMaxState: 0
     startSize:
       scalar: 1.5
@@ -3461,7 +3461,7 @@ ParticleSystem:
       minMaxState: 3
     randomizeRotationDirection: 0
     gravityModifier: 0
-    maxNumParticles: 300
+    maxNumParticles: 100
     rotation3D: 0
   ShapeModule:
     serializedVersion: 2
@@ -3488,7 +3488,7 @@ ParticleSystem:
     serializedVersion: 2
     m_Type: 1
     rate:
-      scalar: 4
+      scalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
